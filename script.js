@@ -1,8 +1,12 @@
-const form = document.querySelector("form");
+const form = document.querySelector("#sib-form");
 
 if (form) {
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    alert("Köszönjük! A feliratkozási rendszer hamarosan aktiválva lesz.");
+  form.addEventListener("submit", function () {
+    const submitButton = form.querySelector(".popstick-submit-btn");
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "FELDOLGOZÁS...";
+    }
   });
 }
