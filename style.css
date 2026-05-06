@@ -563,3 +563,63 @@ footer {
     }
 
 }
+
+.popstick-sib-form {
+  margin-top: 28px;
+}
+
+.popstick-sib-container {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid rgba(210, 135, 9, 0.55);
+  background: rgba(248, 241, 228, 0.9);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.popstick-sib-container #sib-form {
+  margin-top: 0;
+  display: block;
+  max-width: none;
+}
+
+.popstick-sib-container .entry__label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3c4858;
+}
+
+.popstick-sib-container .input {
+  width: 100%;
+  border-radius: 999px;
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+.popstick-sib-container .entry__specification {
+  display: block;
+  margin-top: 10px;
+  color: #6f6960;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.popstick-submit-wrap {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.popstick-submit-wrap .sib-form-block__button {
+  min-height: 56px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 34px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.03em;
+  background: linear-gradient(180deg, #ddb29f 0%, #cb8e75 100%);
+  color: #fffaf5;
+}
