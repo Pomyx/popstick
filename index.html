@@ -98,56 +98,63 @@
         Értesítünk, amikor a Popstick indulásra kész.
       </p>
 
-      <div class="sib-form-message-panel" id="error-message">
-        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-          <span class="sib-form-message-panel__inner-text">
-            Hiba történt a feliratkozás során. Kérlek, próbáld újra később.
-          </span>
-        </div>
-      </div>
-
-      <div class="sib-form-message-panel" id="success-message">
-        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-          <span class="sib-form-message-panel__inner-text">
-            Sikeres feliratkozás! Kérlek, ellenőrizd az emailedet és erősítsd meg a feliratkozást.
-          </span>
-        </div>
-      </div>
-
-      <div class="popstick-form-wrapper">
-        <form
-          id="sib-form"
-          method="POST"
-          action="https://d557c534.sibforms.com/serve/MUIFAEQoj5hvsw024-5VchqsaxtDQ3mPNdPSZJtPGx6RiluvSQefirAHGmPNHFodoiJBSDgDSPqpvav95_GJmo5ygSPQSLXqzjHGmnShK_2aOWO6hQvSoGTxLx0o2J90tn98Y_WorANb4m2BSwk5i3wxTx57sRJ6G874LuyrrLJYax20XSx90UXW0Ec6lXDn11329Wh8RxG6nq7dPQ=="
-          data-type="subscription"
-        >
-          <div class="popstick-email-row">
-            <input
-              type="email"
-              id="EMAIL"
-              name="EMAIL"
-              placeholder="Email címed"
-              autocomplete="email"
-              required
-              class="popstick-email-input"
-            >
-
-            <button type="submit" class="popstick-submit-btn">
-              ÉRTESÍTÉST KÉREK
-            </button>
+      <div class="sib-form popstick-sib-form" style="text-align:center;">
+        <div id="sib-form-container" class="sib-form-container">
+          <div id="error-message" class="sib-form-message-panel">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <span class="sib-form-message-panel__inner-text">
+                Hiba történt a feliratkozás során. Kérlek, próbáld újra később.
+              </span>
+            </div>
           </div>
 
-          <label class="entry__error entry__error--primary popstick-error-label"></label>
+          <div id="success-message" class="sib-form-message-panel">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <span class="sib-form-message-panel__inner-text">
+                Sikeres feliratkozás! Kérlek, ellenőrizd az emailedet és erősítsd meg a feliratkozást.
+              </span>
+            </div>
+          </div>
 
-          <p class="popstick-disclaimer">
-            A feliratkozással hozzájárulsz, hogy értesítést küldjünk a Popstick indulásáról.
-          </p>
+          <div id="sib-container" class="sib-container--large sib-container--vertical popstick-sib-container">
+            <form
+              id="sib-form"
+              method="POST"
+              action="https://d557c534.sibforms.com/serve/MUIFAEQoj5hvsw024-5VchqsaxtDQ3mPNdPSZJtPGx6RiluvSQefirAHGmPNHFodoiJBSDgDSPqpvav95_GJmo5ygSPQSLXqzjHGmnShK_2aOWO6hQvSoGTxLx0o2J90tn98Y_WorANb4m2BSwk5i3wxTx57sRJ6G874LuyrrLJYax20XSx90UXW0Ec6lXDn11329Wh8RxG6nq7dPQ=="
+              data-type="subscription"
+            >
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row">
+                    <label class="entry__label" for="EMAIL" data-required="*">Email címed:</label>
+                    <div class="entry__field">
+                      <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required>
+                    </div>
+                  </div>
+                  <label class="entry__error entry__error--primary"></label>
+                  <label class="entry__specification">
+                    A feliratkozással hozzájárulsz, hogy értesítést küldjünk a Popstick indulásáról.
+                  </label>
+                </div>
+              </div>
 
-          <input type="text" name="email_address_check" value="" class="input--hidden">
-          <input type="hidden" name="locale" value="hu">
-        </form>
+              <div class="sib-form-block popstick-submit-wrap">
+                <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                  <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                    <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                  </svg>
+                  ÉRTESÍTÉST KÉREK
+                </button>
+              </div>
+
+              <input type="text" name="email_address_check" value="" class="input--hidden">
+              <input type="hidden" name="locale" value="en">
+            </form>
+          </div>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer>
