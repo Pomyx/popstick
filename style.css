@@ -316,7 +316,7 @@ footer {
   display: none;
 }
 
-/* Mobil: ezt pixelre közelebb vittem a generált referenciához */
+/* Mobil portrait */
 @media (max-width: 720px) {
   .hero {
     min-height: 100svh;
@@ -443,81 +443,85 @@ footer {
   }
 }
 
-/* Fekvő mobil: a desktop hero méretei itt szétcsúsznak, ezért maradjon mobil layout */
-@media (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+/* Stabil mobil fekvő hero layout */
+@media (max-width: 960px) and (max-height: 540px) and (orientation: landscape) {
   .hero {
     min-height: 100svh;
-    height: 100svh;
+    height: auto;
+    padding: 26px 24px 32px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(180px, 0.9fr);
+    align-items: center;
+    gap: 20px;
+    overflow: visible;
+  }
+
+  .hero-border {
+    inset: 10px;
+  }
+
+  .hero-copy,
+  .product-image {
+    position: relative;
+    inset: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
   }
 
   .hero-copy {
-    left: 6vw;
-    top: 9vh;
-    width: 55vw;
+    z-index: 5;
+    max-width: none;
   }
 
   .brand {
-    margin-bottom: 7vh;
+    margin-bottom: 12px;
+    font-size: 11px;
+    letter-spacing: 6px;
   }
 
-  h1 {
-    font-size: clamp(36px, 7.2vw, 56px);
-    margin-bottom: 2.2vh;
+  .hero h1 {
+    margin-bottom: 10px;
+    font-size: clamp(30px, 6vw, 46px);
+    line-height: 0.92;
   }
 
-  h2 {
-    font-size: clamp(31px, 6.2vw, 46px);
-    margin-bottom: 2.4vh;
+  .hero h2 {
+    margin-bottom: 10px;
+    font-size: clamp(26px, 5vw, 38px);
+    line-height: 1;
   }
 
   .subtitle {
-    font-size: clamp(15px, 2.7vw, 21px);
-    margin-bottom: 2.6vh;
+    margin-bottom: 14px;
+    font-size: clamp(14px, 2.2vw, 17px);
+    line-height: 1.25;
   }
 
   .cta {
-    width: auto;
-    max-width: none;
-    min-width: 320px;
-    padding: 14px 20px;
-    font-size: clamp(14px, 2.3vw, 18px);
+    min-width: 0;
+    width: fit-content;
+    max-width: 92vw;
+    padding: 12px 18px;
+    font-size: clamp(13px, 2vw, 16px);
   }
 
   .product-image {
-    top: 16vh;
-    width: 42vw;
-    height: 68vh;
+    height: clamp(210px, 62svh, 320px);
+    border-right: 2px solid rgba(201, 167, 106, 0.92);
   }
 
-  .word-clean,
-  .word-natural-top,
-  .word-comfort,
-  .word-natural-bottom,
-  .word-conscious {
-    font-size: clamp(28px, 5.2vw, 50px);
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
-  .word-natural-top {
-    left: 28vw;
-  }
-
-  .word-comfort {
-    left: 19vw;
-    bottom: 18vh;
-  }
-
-  .word-natural-bottom {
-    bottom: 8vh;
-  }
-
+  .floating,
   .scroll-down {
-    width: 56px;
-    height: 56px;
-    bottom: 3vh;
-  }
-
-  .scroll-down span {
-    font-size: 34px;
+    display: none;
   }
 }
 
@@ -546,100 +550,74 @@ footer {
 }
 
 .popstick-form-wrapper {
-    width: 100%;
-    max-width: 640px;
-    margin-top: 36px;
+  width: 100%;
+  max-width: 640px;
+  margin-top: 36px;
 }
 
 .popstick-email-row {
-    display: flex;
-    gap: 14px;
-    align-items: center;
+  display: flex;
+  gap: 14px;
+  align-items: center;
 }
 
 .popstick-email-input {
-    flex: 1;
-    height: 62px;
-    border-radius: 999px;
-    border: 1px solid rgba(203, 142, 117, 0.35);
-    background: rgba(255,255,255,0.78);
-
-    padding: 0 26px;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #3d322c;
-
-    outline: none;
-    backdrop-filter: blur(10px);
+  flex: 1;
+  height: 62px;
+  border-radius: 999px;
+  border: 1px solid rgba(203, 142, 117, 0.35);
+  background: rgba(255,255,255,0.78);
+  padding: 0 26px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #3d322c;
+  outline: none;
+  backdrop-filter: blur(10px);
 }
 
 .popstick-email-input::placeholder {
-    color: #a89b94;
+  color: #a89b94;
 }
 
 .popstick-submit-btn {
-    height: 62px;
-    padding: 0 34px;
-
-    border: none;
-    border-radius: 999px;
-
-    background: linear-gradient(
-        180deg,
-        #ddb29f 0%,
-        #cb8e75 100%
-    );
-
-    color: #fffaf5;
-
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 1px;
-
-    cursor: pointer;
-
-    box-shadow:
-        0 12px 30px rgba(203,142,117,0.28);
-
-    transition: all 0.25s ease;
+  height: 62px;
+  padding: 0 34px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ddb29f 0%, #cb8e75 100%);
+  color: #fffaf5;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(203,142,117,0.28);
+  transition: all 0.25s ease;
 }
 
 .popstick-submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow:
-        0 16px 38px rgba(203,142,117,0.38);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(203,142,117,0.38);
 }
 
 .popstick-disclaimer {
-    margin-top: 14px;
-
-    font-size: 12px;
-    line-height: 1.5;
-
-    color: rgba(70,60,54,0.72);
-
-    font-family: 'Montserrat', sans-serif;
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(70,60,54,0.72);
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* MOBILE */
-
 @media (max-width: 768px) {
+  .popstick-email-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    .popstick-email-row {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .popstick-submit-btn {
-        width: 100%;
-    }
-
-    .popstick-email-input {
-        width: 100%;
-    }
-
+  .popstick-submit-btn,
+  .popstick-email-input {
+    width: 100%;
+  }
 }
 
 .popstick-sib-form {
