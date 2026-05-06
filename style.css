@@ -697,3 +697,10 @@ footer {
   background: linear-gradient(180deg, #ddb29f 0%, #cb8e75 100%);
   color: #fffaf5;
 }
+
+/* Desktop hero height fix - ne vágja le az alsó CTA részt */
+@media (min-width: 961px) {
+  .hero {
+    min-height: max(100vh, 900px);
+  }
+}
