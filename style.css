@@ -490,3 +490,16 @@ a {
     object-fit: contain;
   }
 }
+
+.hero-frame::after,
+.hero-frame.gold-border::after {
+  content: none !important;
+  display: none !important;
+  animation: none !important;
+  background: none !important;
+}
+
+.hero-frame,
+.hero-frame.gold-border {
+  overflow: hidden;
+}
