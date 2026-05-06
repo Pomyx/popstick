@@ -63,23 +63,6 @@ a {
     var(--shadow);
 }
 
-.hero-frame::after {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  pointer-events: none;
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 38%,
-    rgba(255, 242, 168, 0.82) 50%,
-    transparent 62%,
-    transparent 100%
-  );
-  transform: translateX(-130%);
-  animation: borderSweep 4.8s ease-in-out infinite;
-}
-
 .hero-frame img {
   width: 100%;
   height: auto;
