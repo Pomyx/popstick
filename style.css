@@ -34,19 +34,12 @@ body {
   z-index: 99;
 }
 
-.site-header {
-  position: absolute;
-  inset: 0 auto auto 0;
-  width: 100%;
-  z-index: 5;
-}
-
 .brand {
   font-size: 1.2rem;
   letter-spacing: 12px;
   color: #9f774f;
   font-weight: 700;
-  margin: 2rem 0 0 4.5rem;
+  margin-bottom: 40px;
 }
 
 .landing { overflow: hidden; }
@@ -228,8 +221,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .site-header { position: static; }
-  .brand { margin: 1.2rem 1.2rem 0; letter-spacing: 9px; font-size: 0.95rem; }
+  .brand { letter-spacing: 10px; font-size: 0.95rem; margin-bottom: 28px; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { padding: 34px 24px 0; }
   .hero-button { width: 100%; }
