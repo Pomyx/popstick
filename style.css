@@ -315,6 +315,25 @@ footer {
   display: none;
 }
 
+@media (min-width: 961px) {
+  .hero-copy {
+    left: 4.6vw;
+    top: 11.5vh;
+  }
+
+  .brand {
+    margin-bottom: 8.6vh;
+  }
+
+  .word-natural-bottom {
+    display: none;
+  }
+
+  .word-clean {
+    top: 6.2vh;
+  }
+}
+
 /* Mobil portrait */
 @media (max-width: 720px) {
   .hero {
