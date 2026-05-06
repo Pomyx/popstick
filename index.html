@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Popstick | Maszatmentes pelenkázás</title>
   <meta name="description" content="Popstick – prémium popsikrém stift modern szülőknek. Maszatmentes, natúr és kényelmes pelenkaápolás." />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <link rel="stylesheet" href="style.css" />
+
+  <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 </head>
 
 <body>
@@ -90,54 +91,62 @@
       </div>
     </section>
 
-    <div class="popstick-form-wrapper">
-
-  <form id="sib-form"
-        method="POST"
-        action="https://d557c534.sibforms.com/serve/MUIFAEQoj5hvsw024-5VchqsaxtDQ3mPNdPSZJtPGx6RiluvSQefirAHGmPNHFodoiJBSDgDSPqpvav95_GJmo5ygSPQSLXqzjHGmnShK_2aOWO6hQvSoGTxLx0o2J90tn98Y_WorANb4m2BSwk5i3wxTx57sRJ6G874LuyrrLJYax20XSx90UXW0Ec6lXDn11329Wh8RxG6nq7dPQ=="
-        data-type="subscription">
-
-    <div class="popstick-email-row">
-
-      <input
-        type="email"
-        id="EMAIL"
-        name="EMAIL"
-        placeholder="Email címed"
-        required
-        class="popstick-email-input"
-      >
-
-      <button type="submit" class="popstick-submit-btn">
-        ÉRTESÍTÉST KÉREK
-      </button>
-
-    </div>
-
-    <p class="popstick-disclaimer">
-      A feliratkozással hozzájárulsz, hogy értesítést küldjünk a Popstick indulásáról.
-    </p>
-
-    <input type="text" name="email_address_check" value="" class="input--hidden">
-    <input type="hidden" name="locale" value="hu">
-
-  </form>
-
-</div>
-    
     <section class="waitlist" id="waitlist">
       <p class="section-label">Early access</p>
       <h2>Csatlakozz a várólistához.</h2>
-      <p>Értesítünk, amikor a Popstick indulásra kész.</p>
+      <p class="waitlist-intro">
+        Értesítünk, amikor a Popstick indulásra kész.
+      </p>
 
-      <form>
-        <input type="email" placeholder="Email címed" required />
-        <button type="submit">Csatlakozom</button>
-      </form>
+      <div class="sib-form-message-panel" id="error-message">
+        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+          <span class="sib-form-message-panel__inner-text">
+            Hiba történt a feliratkozás során. Kérlek, próbáld újra később.
+          </span>
+        </div>
+      </div>
 
-      <small>
-        A feliratkozással hozzájárulsz, hogy értesítést küldjünk a Popstick indulásáról.
-      </small>
+      <div class="sib-form-message-panel" id="success-message">
+        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+          <span class="sib-form-message-panel__inner-text">
+            Sikeres feliratkozás! Kérlek, ellenőrizd az emailedet és erősítsd meg a feliratkozást.
+          </span>
+        </div>
+      </div>
+
+      <div class="popstick-form-wrapper">
+        <form
+          id="sib-form"
+          method="POST"
+          action="https://d557c534.sibforms.com/serve/MUIFAEQoj5hvsw024-5VchqsaxtDQ3mPNdPSZJtPGx6RiluvSQefirAHGmPNHFodoiJBSDgDSPqpvav95_GJmo5ygSPQSLXqzjHGmnShK_2aOWO6hQvSoGTxLx0o2J90tn98Y_WorANb4m2BSwk5i3wxTx57sRJ6G874LuyrrLJYax20XSx90UXW0Ec6lXDn11329Wh8RxG6nq7dPQ=="
+          data-type="subscription"
+        >
+          <div class="popstick-email-row">
+            <input
+              type="email"
+              id="EMAIL"
+              name="EMAIL"
+              placeholder="Email címed"
+              autocomplete="email"
+              required
+              class="popstick-email-input"
+            >
+
+            <button type="submit" class="popstick-submit-btn">
+              ÉRTESÍTÉST KÉREK
+            </button>
+          </div>
+
+          <label class="entry__error entry__error--primary popstick-error-label"></label>
+
+          <p class="popstick-disclaimer">
+            A feliratkozással hozzájárulsz, hogy értesítést küldjünk a Popstick indulásáról.
+          </p>
+
+          <input type="text" name="email_address_check" value="" class="input--hidden">
+          <input type="hidden" name="locale" value="hu">
+        </form>
+      </div>
     </section>
   </main>
 
@@ -145,6 +154,32 @@
     <p>POPSTICK © 2026</p>
     <p>Leendő cégtulajdonos: Hürkecz István · Webfejlesztés: Pomaházi Zoltán / Pomyx</p>
   </footer>
+
+  <script>
+    window.REQUIRED_CODE_ERROR_MESSAGE = "Válassz országkódot.";
+    window.LOCALE = "hu";
+
+    window.EMAIL_INVALID_MESSAGE =
+      window.SMS_INVALID_MESSAGE =
+      "A megadott adatok érvénytelenek. Kérlek, ellenőrizd az email címet.";
+
+    window.REQUIRED_ERROR_MESSAGE = "Ez a mező nem maradhat üresen.";
+    window.GENERIC_INVALID_MESSAGE = "A megadott adatok érvénytelenek. Kérlek, ellenőrizd az email címet.";
+    window.INVALID_NUMBER = "A megadott adatok érvénytelenek. Kérlek, ellenőrizd az email címet.";
+    window.INVALID_DATE = "Adj meg egy érvényes dátumot.";
+    window.REQUIRED_MULTISELECT_MESSAGE = "Válassz legalább egy opciót.";
+
+    window.translation = {
+      common: {
+        selectedList: "{quantity} lista kiválasztva",
+        selectedLists: "{quantity} lista kiválasztva",
+        selectedOption: "{quantity} kiválasztva",
+        selectedOptions: "{quantity} kiválasztva"
+      }
+    };
+
+    var AUTOHIDE = Boolean(0);
+  </script>
 
   <script src="script.js"></script>
 </body>
