@@ -15,8 +15,13 @@
   --white: #fffaf1;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -25,7 +30,9 @@ body {
   color: var(--text);
 }
 
-.landing { overflow: hidden; }
+.landing {
+  overflow: hidden;
+}
 
 .hero {
   position: relative;
@@ -104,7 +111,8 @@ header .brand {
   font-weight: 700;
 }
 
-.hero p, .lead {
+.hero p,
+.lead {
   font-size: clamp(0.95rem, 4.2vw, 1.05rem);
   line-height: 1.42;
   color: #473f39;
@@ -142,10 +150,26 @@ header .brand {
   font-weight: 300;
 }
 
-.top-right { top: 10%; right: 12%; }
-.middle { top: 20%; left: 34%; }
-.bottom-left { bottom: 15%; left: 36%; z-index: -1; }
-.bottom-right { bottom: 9%; right: 10%; }
+.top-right {
+  top: 10%;
+  right: 12%;
+}
+
+.middle {
+  top: 20%;
+  left: 34%;
+}
+
+.bottom-left {
+  bottom: 15%;
+  left: 36%;
+  z-index: -1;
+}
+
+.bottom-right {
+  bottom: 9%;
+  right: 10%;
+}
 
 @media (min-width: 700px) {
   .hero-image {
@@ -180,9 +204,20 @@ header .brand {
     padding: 16px 24px;
   }
 
-  .top-right { right: 14%; }
-  .middle { top: 24%; left: 40%; }
-  .bottom-left { bottom: 18%; left: 33%; }
+  .top-right {
+    right: 14%;
+  }
+
+  .middle {
+    top: 24%;
+    left: 40%;
+  }
+
+  .bottom-left {
+    bottom: 18%;
+    left: 33%;
+    z-index: 0;
+  }
 }
 
 header {
@@ -192,7 +227,11 @@ header {
   pointer-events: none;
 }
 
-.skip-link { position: absolute; left: -9999px; top: 0; }
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
 .skip-link:focus {
   left: 12px;
   top: 12px;
@@ -215,4 +254,6 @@ header {
   border: 0;
 }
 
-.faq-grid article h3 { margin-top: 0; }
+.faq-grid article h3 {
+  margin-top: 0;
+}
