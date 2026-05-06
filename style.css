@@ -443,6 +443,84 @@ footer {
   }
 }
 
+/* Fekvő mobil: a desktop hero méretei itt szétcsúsznak, ezért maradjon mobil layout */
+@media (max-height: 520px) and (orientation: landscape) and (pointer: coarse) {
+  .hero {
+    min-height: 100svh;
+    height: 100svh;
+  }
+
+  .hero-copy {
+    left: 6vw;
+    top: 9vh;
+    width: 55vw;
+  }
+
+  .brand {
+    margin-bottom: 7vh;
+  }
+
+  h1 {
+    font-size: clamp(36px, 7.2vw, 56px);
+    margin-bottom: 2.2vh;
+  }
+
+  h2 {
+    font-size: clamp(31px, 6.2vw, 46px);
+    margin-bottom: 2.4vh;
+  }
+
+  .subtitle {
+    font-size: clamp(15px, 2.7vw, 21px);
+    margin-bottom: 2.6vh;
+  }
+
+  .cta {
+    width: auto;
+    max-width: none;
+    min-width: 320px;
+    padding: 14px 20px;
+    font-size: clamp(14px, 2.3vw, 18px);
+  }
+
+  .product-image {
+    top: 16vh;
+    width: 42vw;
+    height: 68vh;
+  }
+
+  .word-clean,
+  .word-natural-top,
+  .word-comfort,
+  .word-natural-bottom,
+  .word-conscious {
+    font-size: clamp(28px, 5.2vw, 50px);
+  }
+
+  .word-natural-top {
+    left: 28vw;
+  }
+
+  .word-comfort {
+    left: 19vw;
+    bottom: 18vh;
+  }
+
+  .word-natural-bottom {
+    bottom: 8vh;
+  }
+
+  .scroll-down {
+    width: 56px;
+    height: 56px;
+    bottom: 3vh;
+  }
+
+  .scroll-down span {
+    font-size: 34px;
+  }
+}
+
 /* Nagyon keskeny mobilok */
 @media (max-width: 380px) {
   .brand {
