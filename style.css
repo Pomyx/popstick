@@ -266,6 +266,11 @@ a {
     linear-gradient(135deg, rgba(221, 239, 229, 0.95), rgba(244, 238, 228, 0.95));
 }
 
+/* SCROLL */
+#signup {
+  scroll-margin-top: -140px;
+}
+
 .signup-intro {
   max-width: 760px;
   margin: 0 auto 36px;
