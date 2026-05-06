@@ -269,12 +269,12 @@ a {
 /* SCROLL */
 /* Desktop */
 #signup {
-  scroll-margin-top: -60px;
+  scroll-margin-top: -50px;
 }
 /* Mobil */
 @media (max-width: 720px) {
   #signup {
-    scroll-margin-top: -40px;
+    scroll-margin-top: -30px;
   }
 }
 
