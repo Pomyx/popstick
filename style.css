@@ -477,3 +477,33 @@ a {
     text-align: center;
   }
 }
+
+.hero-frame picture {
+  display: block;
+  width: 100%;
+}
+
+.hero-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: 100vh;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .hero-frame {
+    width: 100%;
+    border-radius: 18px;
+  }
+
+  .hero-frame img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
