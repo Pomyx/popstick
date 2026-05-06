@@ -260,7 +260,7 @@ a {
 /* SIGNUP */
 
 .signup-section {
-  padding: clamp(76px, 8vw, 120px) clamp(18px, 5vw, 80px);
+    padding: 38px clamp(18px, 5vw, 80px) 90px;
   background:
     radial-gradient(circle at top, rgba(255, 242, 168, 0.2), transparent 38%),
     linear-gradient(135deg, rgba(221, 239, 229, 0.95), rgba(244, 238, 228, 0.95));
@@ -273,7 +273,7 @@ a {
 
 .signup-intro {
   max-width: 760px;
-  margin: 0 auto 36px;
+  margin: 0 auto 18px;
   text-align: center;
 }
 
