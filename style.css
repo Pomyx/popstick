@@ -267,8 +267,15 @@ a {
 }
 
 /* SCROLL */
+/* Desktop */
 #signup {
-  scroll-margin-top: -80px;
+  scroll-margin-top: -60px;
+}
+/* Mobil */
+@media (max-width: 720px) {
+  #signup {
+    scroll-margin-top: -40px;
+  }
 }
 
 .signup-intro {
