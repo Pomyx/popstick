@@ -274,7 +274,7 @@ a {
 /* Mobil */
 @media (max-width: 720px) {
   #signup {
-    scroll-margin-top: -20px;
+    scroll-margin-top: 20px;
   }
 }
 
