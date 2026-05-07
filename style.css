@@ -616,7 +616,12 @@ a {
   color: var(--gold);
 }
 
-.legal-back-button {
+.legal-card a.legal-back-button,
+.legal-card a.legal-back-button:link,
+.legal-card a.legal-back-button:visited,
+.legal-card a.legal-back-button:hover,
+.legal-card a.legal-back-button:active,
+.legal-card a.legal-back-button:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -627,13 +632,9 @@ a {
   font-family: Georgia, serif;
   font-weight: 700;
   color: #2e2611;
-  text-decoration: none;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
-
-.legal-back-button:hover {
-  text-decoration: none;
-}
-
 /* LEGAL PAGES - NO SHINE */
 
 .legal-no-shine .gold-shine,
