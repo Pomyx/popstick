@@ -135,4 +135,4 @@ Pomaházi Zoltán (Pomyx)
 
 ---
 
-POPSTICK © 2026
+© 2026 POPSTICK™ — All rights reserved.
