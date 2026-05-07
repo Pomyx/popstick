@@ -616,7 +616,7 @@ a {
   color: var(--gold);
 }
 
-.legal-back-button {
+.legal-card a.legal-back-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -627,6 +627,11 @@ a {
   font-family: Georgia, serif;
   font-weight: 700;
   color: #2e2611;
+  text-decoration: none;
+}
+
+.legal-card a.legal-back-button:hover {
+  text-decoration: none;
 }
 
 /* LEGAL PAGES - NO SHINE */
