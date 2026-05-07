@@ -627,6 +627,11 @@ a {
   font-family: Georgia, serif;
   font-weight: 700;
   color: #2e2611;
+  text-decoration: none;
+}
+
+.legal-back-button:hover {
+  text-decoration: none;
 }
 
 /* LEGAL PAGES - NO SHINE */
