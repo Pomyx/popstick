@@ -1,63 +1,135 @@
 # POPSTICK
 
-Modern no-mess diaper care concept for modern parents.
+Premium no-mess diaper care concept for modern parents.
 
-## About
+---
 
-POPSTICK is a premium diaper care concept focused on hygienic, mess-free application using a practical stick format.
+## About POPSTICK
 
-The goal of the project is to simplify diaper care during everyday life, travel and outdoor situations while keeping hands clean and application fast and convenient.
+POPSTICK is a modern diaper care concept designed to make diaper changes cleaner, faster and more convenient.
 
-## Current Project Phase
+Instead of traditional messy cream application, POPSTICK introduces a practical stick-based format focused on hygienic handling and stress-free everyday use.
 
-This repository currently contains:
+The project combines premium branding, minimalist product design and modern digital validation methods before large-scale production.
 
-- Landing page
-- Product concept validation
-- Smoke test marketing
-- Email waitlist system
-- Branding and visual assets
+---
 
-The current focus is validating real market demand before large-scale investment and production.
-
-## Core Concept
+## Core Idea
 
 Traditional diaper creams are often:
 
-- messy
-- inconvenient
-- difficult to use outside the home
-- uncomfortable during quick diaper changes
+* messy to apply
+* uncomfortable during quick diaper changes
+* inconvenient outside the home
+* difficult to use while traveling
 
-POPSTICK introduces a modern stick-based application method designed for:
+POPSTICK aims to solve these problems with a clean and portable stick-based application method.
 
-- clean handling
-- fast application
-- portability
-- hygienic everyday use
+Main goals:
 
-## Planned Features
+* cleaner hands
+* faster diaper changes
+* hygienic application
+* easy portability
+* modern premium user experience
 
-- Premium landing page
-- Waitlist / early access system
-- Product showcase
-- Educational content
-- E-commerce integration
-- Mobile-friendly design
-- Analytics and conversion tracking
+---
+
+## Current Development Phase
+
+The project is currently in:
+
+* concept validation
+* smoke test marketing
+* branding development
+* waitlist building
+* landing page optimization
+* market research phase
+
+The current focus is validating real market demand before manufacturing and large-scale investment.
+
+---
+
+## Repository Contents
+
+This repository currently includes:
+
+* responsive landing page
+* premium visual branding
+* mobile & desktop optimized UI
+* email waitlist integration (Brevo)
+* smoke test marketing system
+* GDPR/privacy pages
+* SEO optimization work
+* technical marketing infrastructure
+
+---
 
 ## Brand Direction
 
-POPSTICK aims for a clean, modern and premium visual identity inspired by minimalist Scandinavian-style baby care brands.
+POPSTICK follows a clean, premium and modern visual identity inspired by:
+
+* Scandinavian-style baby care brands
+* minimalist product design
+* luxury wellness aesthetics
+* soft natural color palettes
+* modern parent-focused UX
+
+Primary brand colors:
+
+* mint
+* beige
+* rose gold
+* soft gold accents
+
+---
+
+## Planned Future Features
+
+Planned future expansion includes:
+
+* full product launch
+* e-commerce integration
+* educational content
+* FAQ system
+* analytics & conversion tracking
+* influencer campaigns
+* performance marketing
+* product photography & video
+* multilingual support
+
+---
+
+## Technical Stack
+
+Current technologies and services:
+
+* HTML5
+* CSS3
+* responsive mobile-first design
+* Brevo email waitlist system
+* SEO optimization
+* GitHub Pages deployment
+
+---
+
+## Project Status
+
+Current status:
+
+PRE-LAUNCH / MARKET VALIDATION
+
+The project is actively evolving and continuously optimized based on real user feedback and conversion data.
+
+---
 
 ## Team
 
-- Future Company Owner: Hürkecz István
-- Web Developer & Digital Design: Pomaházi Zoltán (Pomyx)
+Future Company Owner
+Hürkecz István
 
-## Status
-
-Project currently under development and market validation phase.
+Web Developer & Digital Design
+Pomaházi Zoltán (Pomyx)
 
 ---
 
