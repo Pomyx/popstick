@@ -79,7 +79,6 @@ a {
   display: block;
 }
 
-/* A felső hero képen nincs mozgó csillogás */
 .hero-frame::before,
 .hero-frame::after {
   content: none !important;
@@ -260,18 +259,16 @@ a {
 /* SIGNUP */
 
 .signup-section {
-    padding: 38px clamp(18px, 5vw, 80px) 90px;
+  padding: 38px clamp(18px, 5vw, 80px) 90px;
   background:
     radial-gradient(circle at top, rgba(255, 242, 168, 0.2), transparent 38%),
     linear-gradient(135deg, rgba(221, 239, 229, 0.95), rgba(244, 238, 228, 0.95));
 }
 
-/* SCROLL */
-/* Desktop */
 #signup {
   scroll-margin-top: -40px;
 }
-/* Mobil */
+
 @media (max-width: 720px) {
   #signup {
     scroll-margin-top: 20px;
@@ -367,6 +364,21 @@ a {
   color: #8390A4 !important;
 }
 
+.signup-privacy-note {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #687163;
+}
+
+.signup-privacy-note a {
+  color: var(--rose-dark) !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .form-button {
   min-height: 54px !important;
   padding: 0 28px !important;
@@ -378,27 +390,6 @@ a {
   color: #2e2611 !important;
   cursor: pointer;
   box-shadow: 0 14px 30px rgba(212, 175, 55, 0.32) !important;
-}
-
-/* MORE INFO */
-
-.more-info {
-  padding: 72px 18px;
-  text-align: center;
-  background: var(--beige);
-}
-
-.info-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: clamp(20px, 4vw, 34px) clamp(28px, 7vw, 76px);
-  border-radius: 28px;
-  font-family: Georgia, serif;
-  font-size: clamp(1.55rem, 4vw, 3.4rem);
-  font-weight: 700;
-  color: var(--mint-dark);
-  background: rgba(221, 239, 229, 0.74);
 }
 
 /* FOOTER */
@@ -417,15 +408,37 @@ a {
   margin: 0;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .privacy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
   padding: 10px 18px;
   border-radius: 999px;
   color: #fffaf4;
   border: 1px solid rgba(212, 175, 55, 0.6);
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .privacy-button:hover {
   background: rgba(212, 175, 55, 0.16);
+  transform: translateY(-1px);
+}
+
+.footer-info-button {
+  min-height: 34px;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  opacity: 0.9;
 }
 
 /* ANIMATIONS */
@@ -525,9 +538,14 @@ a {
     flex-direction: column;
     text-align: center;
   }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
-/* Privacy */
+/* PRIVACY */
 
 .legal-page {
   min-height: 100vh;
@@ -601,6 +619,7 @@ a {
 }
 
 /* LEGAL PAGES - NO SHINE */
+
 .legal-no-shine .gold-shine,
 .legal-no-shine .gold-text {
   animation: none !important;
