@@ -434,13 +434,6 @@ a {
   transform: translateY(-1px);
 }
 
-.footer-info-button {
-  min-height: 34px;
-  padding: 8px 14px;
-  font-size: 0.82rem;
-  opacity: 0.9;
-}
-
 /* ANIMATIONS */
 
 @keyframes goldShine {
