@@ -541,6 +541,7 @@ a {
 /* PRIVACY */
 
 .legal-page {
+  position: relative;
   min-height: 100vh;
   padding: clamp(32px, 6vw, 80px) 18px;
   background:
@@ -609,12 +610,12 @@ a {
   color: var(--gold);
 }
 
-.legal-card a.legal-back-button,
-.legal-card a.legal-back-button:link,
-.legal-card a.legal-back-button:visited,
-.legal-card a.legal-back-button:hover,
-.legal-card a.legal-back-button:active,
-.legal-card a.legal-back-button:focus {
+.legal-page a.legal-back-button,
+.legal-page a.legal-back-button:link,
+.legal-page a.legal-back-button:visited,
+.legal-page a.legal-back-button:hover,
+.legal-page a.legal-back-button:active,
+.legal-page a.legal-back-button:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -628,6 +629,22 @@ a {
   text-decoration: none !important;
   border-bottom: none !important;
 }
+
+
+.legal-top-back {
+  position: absolute;
+  top: clamp(16px, 2.4vw, 28px);
+  right: clamp(14px, 2.4vw, 24px);
+  margin-top: 0 !important;
+}
+
+@media (max-width: 640px) {
+  .legal-top-back {
+    right: 12px;
+    padding: 0 22px !important;
+  }
+}
+
 /* LEGAL PAGES - NO SHINE */
 
 .legal-no-shine .gold-shine,
