@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="hu">
 <head>
   <meta charset="UTF-8" />
@@ -54,6 +54,40 @@
       text-decoration: underline;
       color: #2BB2FC;
     }
+
+    .signup-privacy-note {
+      display: block;
+      margin-top: 8px;
+      font-size: 13px;
+      line-height: 1.45;
+      opacity: 0.9;
+    }
+
+    .signup-privacy-note a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .footer-info-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      font-size: 13px;
+      line-height: 1;
+      border-radius: 999px;
+      text-decoration: none;
+    }
   </style>
 
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css" />
@@ -64,15 +98,9 @@
     <section class="hero">
       <div class="hero-frame">
         <picture>
-  <source
-    media="(max-width: 720px)"
-    srcset="assets/images/popstick-og-mobile.png"
-  />
-  <img
-    src="assets/images/popstick-og.png"
-    alt="Popstick - Tiszta kezek. Nyugodt pelenkázás."
-  />
-</picture>
+          <source media="(max-width: 720px)" srcset="assets/images/popstick-og-mobile.png" />
+          <img src="assets/images/popstick-og.png" alt="Popstick - Tiszta kezek. Nyugodt pelenkázás." />
+        </picture>
       </div>
 
       <a href="#signup" class="hero-button gold-shine">
@@ -117,7 +145,7 @@
     <section id="signup" class="signup-section">
       <div class="signup-intro">
         <p class="eyebrow gold-text">Várólista</p>
-          <p>Csatlakozz a Popstick várólistához, és elsőként értesítünk, amikor elindul.</p>
+        <p>Csatlakozz a Popstick várólistához, és elsőként értesítünk, amikor elindul.</p>
       </div>
 
       <div class="sib-form">
@@ -172,16 +200,16 @@
 
                       <div class="entry__field">
                         <input
-  class="input"
-  type="email"
-  id="EMAIL"
-  name="EMAIL"
-  autocomplete="email"
-  inputmode="email"
-  placeholder="email@pelda.hu"
-  data-required="true"
-  required
-/>
+                          class="input"
+                          type="email"
+                          id="EMAIL"
+                          name="EMAIL"
+                          autocomplete="email"
+                          inputmode="email"
+                          placeholder="email@pelda.hu"
+                          data-required="true"
+                          required
+                        />
                       </div>
                     </div>
 
@@ -189,6 +217,13 @@
 
                     <label class="entry__specification form-note">
                       A feliratkozással hozzájárulsz, hogy értesítést küldjünk a Popstick indulásáról.
+                      <span class="signup-privacy-note">
+                        Az adataid kezeléséről az
+                        <a href="adatvedelem.html" target="_blank" rel="noopener noreferrer">
+                          Adatkezelési tájékoztatóban
+                        </a>
+                        olvashatsz.
+                      </span>
                     </label>
                   </div>
                 </div>
@@ -212,17 +247,18 @@
         </div>
       </div>
     </section>
-
-    <section class="more-info">
-      <a href="info.html" class="info-link gold-border">
-        További információk a termékről
-      </a>
-    </section>
   </main>
 
   <footer class="site-footer">
     <p>© 2026 Popstick.hu</p>
-    <a href="adatvedelem.html" class="privacy-button">Adatvédelem</a>
+
+    <div class="footer-links">
+      <a href="adatvedelem.html" class="privacy-button">Adatvédelem</a>
+
+      <a href="info.html" class="privacy-button footer-info-button">
+        További információk
+      </a>
+    </div>
   </footer>
 
   <script>
