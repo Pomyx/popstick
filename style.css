@@ -605,6 +605,17 @@ a {
   padding-left: 22px;
 }
 
+.legal-card a {
+  color: var(--rose-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-card a:hover {
+  color: var(--gold);
+}
+
 .legal-back-button {
   display: inline-flex;
   align-items: center;
