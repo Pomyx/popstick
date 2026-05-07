@@ -408,6 +408,22 @@ a {
   margin: 0;
 }
 
+.footer-branding {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-credit {
+  font-size: 0.9rem;
+  opacity: 0.88;
+}
+
+.legal-footer {
+  margin-top: 40px;
+}
+
+
 .footer-links {
   display: flex;
   align-items: center;
