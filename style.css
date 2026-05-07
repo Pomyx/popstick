@@ -599,7 +599,8 @@ a {
   color: var(--mint-dark);
 }
 
-.legal-card h2:first-child {
+.legal-card h2:first-child,
+.legal-card .legal-card-top + h2 {
   margin-top: 0;
 }
 
@@ -648,16 +649,33 @@ a {
 
 
 .legal-top-back {
-  position: absolute;
-  top: clamp(16px, 2.4vw, 28px);
-  right: clamp(14px, 2.4vw, 24px);
   margin-top: 0 !important;
 }
 
+.legal-card-top {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 28px;
+}
+
+.legal-card-back {
+  margin-top: 0 !important;
+  min-height: 50px !important;
+  padding: 0 28px !important;
+  white-space: nowrap;
+}
+
 @media (max-width: 640px) {
-  .legal-top-back {
-    right: 12px;
-    padding: 0 22px !important;
+  .legal-card-top {
+    justify-content: center;
+    margin-bottom: 26px;
+  }
+
+  .legal-card-back {
+    width: 100%;
+    max-width: 360px;
+    padding: 0 20px !important;
+    text-align: center;
   }
 }
 
