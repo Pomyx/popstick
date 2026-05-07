@@ -13,11 +13,16 @@ if (form) {
 
 
 (function () {
-  const backToTopButton = document.createElement('button');
-  backToTopButton.type = 'button';
-  backToTopButton.className = 'back-to-top';
-  backToTopButton.setAttribute('aria-label', 'Vissza az oldal tetejére');
-  backToTopButton.textContent = '↑';
+  let backToTopButton = document.querySelector('.back-to-top');
+
+  if (!backToTopButton) {
+    backToTopButton = document.createElement('button');
+    backToTopButton.type = 'button';
+    backToTopButton.className = 'back-to-top';
+    backToTopButton.setAttribute('aria-label', 'Vissza az oldal tetejére');
+    backToTopButton.textContent = '↑';
+    document.body.appendChild(backToTopButton);
+  }
 
   const toggleBackToTop = () => {
     if (window.scrollY > 300) {
@@ -32,7 +37,6 @@ if (form) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  document.body.appendChild(backToTopButton);
   window.addEventListener('scroll', toggleBackToTop, { passive: true });
   toggleBackToTop();
 })();
