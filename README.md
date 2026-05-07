@@ -1,12 +1,11 @@
-# POPSTICK
+# POPSTICK™
 
-popstick.hu
 
 Premium no-mess diaper care concept for modern parents.
 
 ---
 
-## About POPSTICK
+## About POPSTICK™
 
 POPSTICK is a modern diaper care concept designed to make diaper changes cleaner, faster and more convenient.
 
