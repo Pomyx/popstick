@@ -599,3 +599,14 @@ a {
   font-weight: 700;
   color: #2e2611;
 }
+
+/* LEGAL PAGES - NO SHINE */
+.legal-no-shine .gold-shine,
+.legal-no-shine .gold-text {
+  animation: none !important;
+  background-size: 100% 100% !important;
+}
+
+.legal-no-shine .gold-border::after {
+  display: none !important;
+}
