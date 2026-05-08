@@ -506,14 +506,15 @@ a {
 @media (max-width: 720px) {
   .hero {
     min-height: 100vh;
-    justify-content: center;
-    padding: 10px;
-    gap: 16px;
+    justify-content: flex-start;
+    padding: 0 10px 10px;
+    gap: 14px;
   }
 
   .hero-frame {
     width: 100%;
     border-radius: 18px;
+    margin-top: 0;
   }
 
   .hero-frame img {
@@ -527,6 +528,7 @@ a {
     width: calc(100% - 20px);
     min-height: 56px;
   }
+}
 
   .product-section,
   .signup-section {
